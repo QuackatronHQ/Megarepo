@@ -1,13 +1,19 @@
 version = 1
 
-[[analyzers]]
-name = "secrets"
+test_patterns = ["test/**"]
+
+exclude_patterns = [
+  "dist/*min.js"
+]
 
 [[analyzers]]
-name = "javascript"
+name = "secrets"
 
 [[analyzers]]
 name = "rust"
 
   [analyzers.meta]
   msrv = "stable"
+
+[[analyzers]]
+name = "javascript"
