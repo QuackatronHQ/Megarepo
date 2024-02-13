@@ -1,5 +1,6 @@
 """Simple calculator app"""
 
+import os
 
 def main():
     while True:
