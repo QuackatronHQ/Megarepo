@@ -3,7 +3,8 @@ import pdb
 import sys as sys
 import os
 import subprocess
-import ssl
+import SSL
+import requests
 
 import sqlalchemy
 
