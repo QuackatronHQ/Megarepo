@@ -36,8 +36,7 @@ public class Server extends HttpServlet {
         Boolean b = Boolean.parseBoolean(req.getParameter("winCondition"));
 
         try {
-            conn =
-                    conn = DriverManager.getConnection(DB_URL, "user", "");
+            conn = DriverManager.getConnection(DB_URL, "user", "");
             Statement s = conn.createStatement();
             s.execute("SELECT userName, isWin FROM users WHERE uid = " + req.getParameter("ticket") + ";");
             ResultSet r = s.getResultSet();
